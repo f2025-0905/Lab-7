@@ -6,16 +6,27 @@ void checkEvenOdd(int n) {
         cout << n << " is Even" << endl;
     else
         cout << n << " is Odd" << endl;
-}
+    }
+
+void line(){
+    cout << "________________________________________\n";
+    }
     
 int main() {
-    for(int i=1; i>=1; i++){
+    bool loop = true;
     
-    int num;
-    cout << "Enter a number: ";
-    cin >> num;
-    checkEvenOdd(num);
+    while (loop == true){
+       int num;
+       cout << "Enter a number or zero to exit: ";
+       cin >> num;
+  
+       if (num == 0){
+            loop = false;
+          }else {
+            checkEvenOdd(num);
+            line();
+        }
         
-    }
+    }    
     return 0;
 }
