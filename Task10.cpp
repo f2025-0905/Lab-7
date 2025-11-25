@@ -46,14 +46,25 @@ int isPrime(int n){
             return qoutient;
     }
     
-    void menu(int n){
-         int opt;
+    
+
+
+int main() {
+    int num;
+    cout << "Enter a Number: ";
+    cin >> num;
+    
+    bool isTrue = true;
+    
+    while (isTrue == true){
+        int opt;
     cout << "Select an option from below" << endl;
     cout << "1. Check Even/Odd" << endl;
     cout << "2. Count digit" << endl;
     cout << "3. Sum of digit" << endl;
     cout << "4. Check prime/composite" << endl;
     cout << "5. Exit" << endl;
+    cout << "Option: ";
     cin >> opt;
     
         
@@ -71,17 +82,7 @@ int isPrime(int n){
        default: cout << "Invalid option" << endl;
         }
     }
-
-
-int main() {
-    int num;
-    cout << "Enter a Number: ";
-    cin >> num;
     
-    bool isTrue = true;
-    
-    while (isTrue == true)
-    menu();
     
     
 
